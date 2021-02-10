@@ -27,6 +27,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <rtthread.h>
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
@@ -126,7 +127,7 @@ int main(void)
   while (1)
   {
     GPIO_SetBits(GPIOE,GPIO_Pin_4);  //œ®√LEDµ∆
-    SysCtlDelay(500*(SystemCoreClock/3000));//—” ±500ms
+    rt_thread_mdelay(500);
     GPIO_ResetBits(GPIOE,GPIO_Pin_4);//µ„¡¡LEDµ∆
     SysCtlDelay(500*(SystemCoreClock/3000));//—” ±500ms
   }

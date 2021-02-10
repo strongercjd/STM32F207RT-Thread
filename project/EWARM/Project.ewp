@@ -305,6 +305,8 @@
           <state>$PROJ_DIR$\..</state>
           <state>$PROJ_DIR$\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc</state>
           <state>$PROJ_DIR$\..\..\Libraries\CMSIS\Device\ST\STM32F2xx\Include</state>
+          <state>$PROJ_DIR$\..\..\rtthread</state>
+          <state>$PROJ_DIR$\..\..\rtthread\include</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -956,6 +958,63 @@
     <name>EWARM</name>
     <file>
       <name>$PROJ_DIR$\..\..\Libraries\CMSIS\Device\ST\STM32F2xx\Source\Templates\iar\startup_stm32f2xx.s</name>
+    </file>
+  </group>
+  <group>
+    <name>rtthread</name>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\board.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\clock.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\components.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\libcpu\arm\cortex-m3\context_iar.S</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\cpu.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\libcpu\arm\cortex-m3\cpuport.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\idle.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\ipc.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\irq.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\kservice.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\mem.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\memheap.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\mempool.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\object.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\scheduler.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\slab.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\thread.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtthread\src\timer.c</name>
     </file>
   </group>
   <group>
